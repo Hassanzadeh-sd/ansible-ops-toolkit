@@ -1,4 +1,31 @@
+<div align="center">
+
 # ansible-ops-toolkit
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-3da639.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-SKILL-D97757?logo=anthropic&logoColor=white)](https://code.claude.com/docs/en/skills)
+[![Skill](https://img.shields.io/badge/%2Fansible--ops-skill-2088FF?logo=ansible&logoColor=white)](skills/ansible-ops/SKILL.md)
+[![Ansible Core](https://img.shields.io/badge/Ansible%20Core-2.14%2B-EE0000?logo=ansible&logoColor=white)](https://docs.ansible.com/)
+[![Validate CI](https://github.com/Hassanzadeh-sd/ansible-ops-toolkit/actions/workflows/lint.yml/badge.svg)](https://github.com/Hassanzadeh-sd/ansible-ops-toolkit/actions/workflows/lint.yml)
+
+</div>
+
+```text
+   ▛▀▀▜
+   ▌◍◍▐   Claude Code · Opus 4.8
+   ▙▄▄▟   ansible-ops-toolkit/
+          └ SessionStart says: [ansible-ops 0.1.0]
+──────────────────────────────────────────────────────────────
+
+    _    _   _ ____ ___ ____  _     _____    ___  ____  ____
+   / \  | \ | / ___|_ _| __ )| |   | ____|  / _ \|  _ \/ ___|
+  / _ \ |  \| \___ \| ||  _ \| |   |  _|   | | | | |_) \___ \
+ / ___ \| |\  |___) | || |_) | |___| |___  | |_| |  __/ ___) |
+/_/   \_\_| \_|____/___|____/|_____|_____|  \___/|_|   |____/
+
+──────────────────────────────────────────────────────────────
+❯ /ansible-ops  —  write · review · lint · convert · debug Ansible
+```
 
 A [Claude Code](https://claude.com/claude-code) **skill** for writing, reviewing, linting,
 converting, and debugging Ansible — playbooks, roles, inventory, and Jinja2 templates —
