@@ -6,6 +6,7 @@
     "name": "Sajjad Hassanzadeh"
   },
   "homepage": "https://github.com/Hassanzadeh-sd/ansible-ops-toolkit",
+  "repository": "https://github.com/Hassanzadeh-sd/ansible-ops-toolkit",
   "license": "MIT",
   "keywords": [
     "ansible",
