@@ -1,0 +1,18 @@
+{
+  "name": "ansible-ops-toolkit",
+  "version": "0.1.0",
+  "description": "Write, review, lint, convert, and debug Ansible with production best practices — a Claude Code skill.",
+  "author": {
+    "name": "Sajjad Hassanzadeh"
+  },
+  "homepage": "https://github.com/Hassanzadeh-sd/ansible-ops-toolkit",
+  "license": "MIT",
+  "keywords": [
+    "ansible",
+    "ansible-lint",
+    "yamllint",
+    "devops",
+    "infrastructure",
+    "skill"
+  ]
+}

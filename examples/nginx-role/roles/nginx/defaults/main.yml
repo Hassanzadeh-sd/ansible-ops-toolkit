@@ -1,0 +1,12 @@
+---
+# Package providing nginx.
+nginx_package: nginx
+
+# Worker tuning.
+nginx_worker_processes: auto
+nginx_worker_connections: 1024
+
+# Default server block.
+nginx_listen_port: 80
+nginx_server_name: localhost
+nginx_document_root: /var/www/html

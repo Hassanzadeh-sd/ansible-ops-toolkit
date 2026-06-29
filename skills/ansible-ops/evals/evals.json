@@ -1,0 +1,55 @@
+{
+  "skill_name": "ansible-ops",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write an Ansible playbook to install and configure nginx on my web hosts.",
+      "expected_output": "A named playbook plus role using FQCN modules, idempotent tasks, a validated template, a notify/handler reload, explicit file modes, and role-prefixed variables in defaults.",
+      "files": [],
+      "expectations": [
+        "Uses fully qualified module names (ansible.builtin.*)",
+        "Every task and play has a descriptive, capitalized name",
+        "Template task uses validate: and the file task sets mode explicitly",
+        "Service reload is done via notify + a named handler",
+        "Tunable values are role-prefixed variables in defaults/main.yml",
+        "Runs or offers to run ansible-lint / yamllint to verify"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Lint my Ansible repo and set up ansible-lint and yamllint for it.",
+      "expected_output": "Runs syntax-check, yamllint, and ansible-lint, returns a severity-ranked report, and scaffolds .yamllint, .ansible-lint, and pre-commit config if missing.",
+      "files": [],
+      "expectations": [
+        "Runs ansible-playbook --syntax-check, yamllint, and ansible-lint",
+        "Reports findings ranked by severity (error / warning / nit)",
+        "Offers .yamllint, .ansible-lint, and .pre-commit-config.yaml when absent",
+        "Shows a diff before applying any fix"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Review this role for best practices.",
+      "expected_output": "A best-practices review covering idempotency, FQCN, validation, secrets/no_log, tags, handlers, and multi-OS guards, with concrete fixes.",
+      "files": [],
+      "expectations": [
+        "Checks idempotency (changed_when / creates on commands)",
+        "Flags missing FQCN, missing task names, missing file mode",
+        "Checks secrets handling (Vault + no_log) and template validate:",
+        "Does not overwrite files silently; proposes diffs"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Convert this bash provisioning script into an idempotent Ansible role.",
+      "expected_output": "A role that maps each command to its native module, extracts literals into defaults variables, and wraps any module-less command with changed_when/creates.",
+      "files": [],
+      "expectations": [
+        "Maps apt/cp/sed/systemctl/useradd to native modules rather than command:",
+        "Extracts hardcoded values into role-prefixed defaults variables",
+        "Wraps genuinely module-less commands with creates/changed_when",
+        "Produces standard role directory layout with meta/main.yml"
+      ]
+    }
+  ]
+}

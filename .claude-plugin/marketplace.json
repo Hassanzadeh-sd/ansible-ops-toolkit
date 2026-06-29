@@ -1,0 +1,18 @@
+{
+  "name": "ansible-ops-toolkit",
+  "description": "Ansible writing, linting & best-practices skill for Claude Code",
+  "owner": {
+    "name": "Hassanzadeh-sd"
+  },
+  "plugins": [
+    {
+      "name": "ansible-ops-toolkit",
+      "description": "Write, review, lint, convert & debug Ansible with production best practices",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Sajjad Hassanzadeh"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# {{ ansible_managed }}
+# Managed by the nginx role — local edits will be overwritten.
+user www-data;
+worker_processes {{ nginx_worker_processes }};
+pid /run/nginx.pid;
+
+events {
+    worker_connections {{ nginx_worker_connections }};
+}
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+    sendfile      on;
+    keepalive_timeout  65;
+
+    server {
+        listen {{ nginx_listen_port }} default_server;
+        server_name {{ nginx_server_name }};
+        root {{ nginx_document_root }};
+        index index.html;
+
+        location / {
+            try_files $uri $uri/ =404;
+        }
+    }
+}
